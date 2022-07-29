@@ -1,0 +1,84 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- FONTAWSOME    -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>REGISTRATION FORM - V8</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 style="text-align: center;" class="mb-5">WJBU OFFLINE REGISTRATION FORM</h1>
+    <div class="row">
+      <form class="col s6" id="myForm" novalidate>
+        <div class="row">
+          <div class="input-field col s6">
+            <label for="firstName">First name</label>
+            <input type="text" name="Họ" id="firstName" />
+            <span id="error_firstName" class="helper-text text-danger"></span>
+            <span id="error_firstName_all_leter" class="helper-text text-danger"></span>
+          </div>
+          <div class="input-field col s6">
+            <label for="lastName">Last name</label>
+            <input type="text" name="Tên" id="lastName" />
+            <span id="error_lastName" class="helper-text text-danger"></span>
+            <span id="error_lastName_all_leter" class="helper-text text-danger"></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <label for="password">Password</label>
+            <input type="password" name="Mật khẩu" id="password" minlength="6" maxlength="32" /><i style="margin-left: -30px;
+              cursor: pointer;" class="fa fa-eye" id="eye"></i>
+            <!-- <i class="fa fa-eye-slash"></i> -->
+            <span id="error_password" class="helper-text text-danger"></span>
+            <span id="error_password_min_max_length" class="helper-text text-danger"></span>
+            <span id="error_password_min_max_value" class="helper-text text-danger"></span>
+          </div>
+          <div class="input-field col s6">
+            <label for="confirmPassword">Confirm password</label>
+            <input type="password" name="Xác nhận mật khẩu" id="confirmPassword" />
+            <span id="error_confirmPassword" class="helper-text text-danger"></span>
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <label for="phone">Phone</label>
+            <input type="text" name="Số điện thoại" id="phone" />
+            <span id="error_phone" class="helper-text text-danger"></span>
+
+          </div>
+          <div class="input-field col s6">
+            <label for="email">Email</label>
+            <input type="email" name="Email" id="email" />
+            <span id="error_email" class="helper-text text-danger"></span>
+
+          </div>
+        </div>
+        <button id="btnDangKy" class="btn waves-effect waves-light" style="position: absolute;
+        right: 43%;" type="submit">
+          REGISTER
+        </button>
+      </form>
+
+
+      <div class="col s6">
+        <img src="./yourlie.jpg" style="width: 100%; border-radius: 6px; opacity: 0.85; height: 357px;" />
+      </div>
+    </div>
+  </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script src="./validation.js"></script>
+
+</html>
